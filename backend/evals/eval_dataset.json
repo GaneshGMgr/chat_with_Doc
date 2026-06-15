@@ -1,0 +1,72 @@
+[
+	{
+		"id": "eval_001",
+		"question": "What is the main topic of the document collection, and which sections discuss it most directly?",
+		"expected_keywords": ["main topic", "section", "document collection"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_002",
+		"question": "According to the documents, what is the recommended process for uploading and indexing new files?",
+		"expected_keywords": ["upload", "indexing", "process"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_003",
+		"question": "Which settings or configuration values are most important for running the system locally?",
+		"expected_keywords": ["settings", "configuration", "local"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_004",
+		"question": "How do the documents describe the relationship between retrieval quality and answer accuracy?",
+		"expected_keywords": ["retrieval", "quality", "accuracy"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_005",
+		"question": "If two documents describe the same concept differently, how should the answer reconcile the differences?",
+		"expected_keywords": ["two documents", "concept", "differences"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_006",
+		"question": "What evidence do the documents provide for any claim about the system's supported models or providers?",
+		"expected_keywords": ["supported models", "providers", "evidence"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_007",
+		"question": "What happens when a user asks about a topic that is not covered in the knowledge base?",
+		"expected_keywords": ["not covered", "knowledge base", "fallback"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_008",
+		"question": "Which parts of the documentation explain how citations should appear in answers?",
+		"expected_keywords": ["citations", "answers", "appear"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_009",
+		"question": "What can be concluded by combining information from multiple documents about the same workflow?",
+		"expected_keywords": ["multiple documents", "workflow", "concluded"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	},
+	{
+		"id": "eval_010",
+		"question": "Which factual statements are directly supported by the documents, and which should be avoided if not cited?",
+		"expected_keywords": ["factual statements", "supported", "cited"],
+		"expected_source_type": "document",
+		"min_citation_coverage": 0.5
+	}
+]

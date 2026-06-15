@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"system_prompt_file": "system_prompt_v1.txt",
+	"defaults": {
+		"top_k_chunks": 8, "rerank": true, "hybrid_search": true,
+		"temperature": 0.7, "max_tokens": 2048, "reranker_top_n": 4
+	},
+	"embedding_model": "all-MiniLM-L6-v2",
+	"reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+}

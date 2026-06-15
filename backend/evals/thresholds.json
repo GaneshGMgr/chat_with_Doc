@@ -1,0 +1,10 @@
+{
+	"min_faithfulness": 0.6,
+	"min_citation_rate": 0.5,
+	"max_avg_latency_ms": 10000,
+	"description": {
+		"min_faithfulness": "Fraction of evals where expected keywords appear",
+		"min_citation_rate": "Fraction of answers that cite at least one source",
+		"max_avg_latency_ms": "Maximum average latency across all eval questions"
+	}
+}

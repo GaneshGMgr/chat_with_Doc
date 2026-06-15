@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --bg: #07080d;
+  --surface: #0f1015;
+  --panel: #13141c;
+  --border: #1e1f2e;
+  --border2: #252637;
+  --text: #ddd8c4;
+  --muted: #5a5b6e;
+  --muted2: #3a3b4e;
+  --lime: #c8f020;
+  --blue: #4d9fff;
+  --red: #ff5e5e;
+  --amber: #ffb830;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { background: var(--bg); color: var(--text); height: 100%; overflow: hidden; }
+body { font-family: 'DM Sans', sans-serif; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2b3e; border-radius: 2px; }
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.04) 2px, rgba(0,0,0,0.04) 4px);
+  pointer-events: none; z-index: 9999;
+}
+
+.prose-rag { font-family: 'DM Sans', sans-serif; font-size: 0.9375rem; line-height: 1.7; color: var(--text); }
+.prose-rag p { margin: 0.5em 0; }
+.prose-rag p:first-child { margin-top: 0; }
+.prose-rag p:last-child { margin-bottom: 0; }
+.prose-rag code { font-family: 'IBM Plex Mono', monospace; font-size: 0.85em; background: #1a1b2a; border: 1px solid var(--border2); padding: 0.1em 0.4em; border-radius: 3px; color: var(--lime); }
+.prose-rag pre { background: #0d0e18; border: 1px solid var(--border); border-radius: 6px; padding: 1rem; overflow-x: auto; margin: 0.75rem 0; }
+.prose-rag pre code { background: none; border: none; padding: 0; font-size: 0.875em; color: var(--lime); }
+.prose-rag h1, .prose-rag h2, .prose-rag h3 { font-family: 'Syne', sans-serif; font-weight: 600; color: #f0ece0; margin: 1em 0 0.4em; }
+.prose-rag ul, .prose-rag ol { padding-left: 1.4em; margin: 0.5em 0; }
+.prose-rag li { margin: 0.2em 0; }
+.prose-rag blockquote { border-left: 2px solid var(--lime); padding-left: 1em; color: #9a9880; font-style: italic; margin: 0.75em 0; }
+.prose-rag table { width: 100%; border-collapse: collapse; margin: 0.75em 0; }
+.prose-rag th { background: var(--panel); padding: 0.5em 0.75em; text-align: left; border-bottom: 1px solid var(--border2); font-family: 'IBM Plex Mono', monospace; font-size: 0.8em; letter-spacing: 0.05em; text-transform: uppercase; color: var(--lime); }
+.prose-rag td { padding: 0.5em 0.75em; border-bottom: 1px solid var(--border); }
+.prose-rag a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+.prose-rag strong { color: #f0ece0; font-weight: 600; }
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.cursor-blink::after { content:'▍'; animation: blink 0.8s step-end infinite; color: var(--lime); font-size: 0.85em; margin-left: 1px; }
+
+@keyframes slideUp { from { opacity:0; transform: translateY(6px) } to { opacity:1; transform: translateY(0) } }
+@keyframes fadeIn  { from { opacity:0 } to { opacity:1 } }
+.animate-slide-up { animation: slideUp 0.2s ease-out; }
+.animate-fade-in  { animation: fadeIn 0.15s ease-out; }
+
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.animate-pulse { animation: pulse 1.5s ease-in-out infinite; }

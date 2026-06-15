@@ -1,0 +1,40 @@
+name: "RAG Eval Gate"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    env:
+      LANGFUSE_ENABLED: "false"
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - run: docker-compose up -d backend redis
+
+      - run: sleep 15
+
+      - run: curl --retry 5 --retry-delay 3 http://localhost:8000/api/v1/health
+
+      - run: python -m backend.evals.run_evals
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: backend/evals/eval_results.json
