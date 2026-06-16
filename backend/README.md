@@ -57,10 +57,12 @@ docker-compose up --build
 ## 🐳 Docker Commands
 ```bash  
 ## 🐳 Start
-docker compose up -d # terminal 1 http://localhost:3000
+docker compose up # terminal 1 http://localhost:3000
+docker compose up -d # start everything together
 docker compose up --build
 
-docker compose logs -f langfuse # terminal 2  http://localhost:3001
+docker compose up langfuse # terminal 2  http://localhost:3001
+docker compose logs -f langfuse
 ## 📊 Check
 docker ps
 

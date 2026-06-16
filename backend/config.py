@@ -47,7 +47,7 @@ class Settings(BaseSettings):
 
     OPENAI_DEFAULT_MODEL: str = "gpt-4o-mini"
     GROQ_DEFAULT_MODEL: str = "llama-3.3-70b-versatile"
-    OLLAMA_DEFAULT_MODEL: str = "llama3.2"
+    OLLAMA_DEFAULT_MODEL: str = "gemma4"
 
     RERANKER_MODEL: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
     RERANKER_TOP_N: int = 4
