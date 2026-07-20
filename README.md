@@ -68,7 +68,6 @@ The system combines document ingestion, semantic search, reranking, and LLM gene
 ### Frontend
 - Next.js
 - React
-- TypeScript
 - Server-Sent Events (SSE)
 - Tailwind CSS
 
@@ -116,7 +115,7 @@ RAGbase/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/RAGbase.git
+git clone [https://github.com/yourusername/RAGbase.git](https://github.com/GaneshGMgr/chat_with_Doc.git)
 cd RAGbase
 ```
 
