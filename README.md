@@ -114,9 +114,13 @@ RAGbase/
 
 ### 1. Clone Repository
 
+Clone the repository:
+
+:contentReference[oaicite:0]{index=0}
+
 ```bash
-git clone (https://github.com/GaneshGMgr/chat_with_Doc.git)
-cd RAGbase
+git clone https://github.com/GaneshGMgr/chat_with_Doc.git
+cd chat_with_Doc
 ```
 
 ### 2. Configure Environment Variables
