@@ -40,6 +40,23 @@ The system combines document ingestion, semantic search, reranking, and LLM gene
 
 ---
 
+## 🖥️ Screenshots
+
+### Chat Dashboard
+
+Real-time AI chat interface with streaming responses, conversation management, model selection, and citations.
+
+![Chat Dashboard](data/output/media/chat_dashboard.png)
+
+
+### Document Ingestion
+
+Upload and process documents to create a searchable knowledge base for RAG.
+
+![Document Ingestion](data/output/media/document_injection.png)
+
+---
+
 ## 🏗️ System Architecture
 
 ```
