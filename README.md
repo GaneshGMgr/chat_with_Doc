@@ -115,7 +115,7 @@ RAGbase/
 ### 1. Clone Repository
 
 ```bash
-git clone [https://github.com/yourusername/RAGbase.git](https://github.com/GaneshGMgr/chat_with_Doc.git)
+git clone (https://github.com/GaneshGMgr/chat_with_Doc.git)
 cd RAGbase
 ```
 
