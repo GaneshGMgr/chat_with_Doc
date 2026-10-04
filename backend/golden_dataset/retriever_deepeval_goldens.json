@@ -1,0 +1,62 @@
+[
+  {
+    "id": "g001",
+    "query": "If an app faces diverse failure points and risks, why use multiple eval pipelines?",
+    "ideal_answer": "Multiple eval pipelines are necessary because they allow you to monitor different failure points—specifically at the component, workflow, and application levels—and address various risk categories associated with the application.",
+    "source": "Session 3"
+  },
+  {
+    "id": "g002",
+    "query": "Compare generation, MC1, and MC2 methods for measuring LLM performance and evaluation.",
+    "ideal_answer": "The three methods for measuring LLM performance are:\n\n*   **Generation:** The model generates an answer (e.g., A, B, C, or D) independently. Because the output format can vary, an LLM judge is required to analyze and interpret the results.\n*   **MC1:** Measures performance using log probabilities of the model's output.\n*   **MC2:** Measures performance by calculating log probabilities against the correct answers and joining them.",
+    "source": "Session 5"
+  },
+  {
+    "id": "g003",
+    "query": "How did comparing current results to the last baseline verify software accuracy after mark shifts?",
+    "ideal_answer": "Comparing current results to the last baseline allowed for a week-by-week distribution analysis. By observing that the current week's results deviated significantly from the established patterns of previous weeks, the team was able to identify that the software was producing anomalous mark shifts and verify that it was not functioning normally.",
+    "source": "Session 3"
+  },
+  {
+    "id": "g004",
+    "query": "What are the three failure levels in LLM apps, including component and workflow-specific issues?",
+    "ideal_answer": "The three failure levels in LLM applications are:\n\n1.  **Component Level:** Individual parts of the application can fail, including system prompts, retrievers, rerankers, query rewriters, embedding models, vector databases, output parsers, agents, tool selectors, memory, and guardrails. Each requires its own evaluation pipeline.\n2.  **Workflow Level:** Failures can occur within the orchestration of the application, such as in RAG workflows, agentic workflows, or multi-turn chatbot interactions.\n3.  **[Implicit/Third Level]:** While the provided text introduces the concept of three levels, it explicitly details only the component and workflow levels.",
+    "source": "Session 2"
+  },
+  {
+    "id": "g005",
+    "query": "Which famous benchmarks help evaluate LLM capabilities to inform model selection for specific projects?",
+    "ideal_answer": "The provided context mentions that the session aims to cover famous benchmarks to help with model selection for specific projects, but it does not list the specific names of those benchmarks.",
+    "source": "Session 5"
+  },
+  {
+    "id": "g006",
+    "query": "If AI models prioritize leaderboard scores, how does Goodhart’s Law impact their real-world performance?",
+    "ideal_answer": "According to Goodhart’s Law, when a measure becomes a target, it ceases to be a good measure. If AI models prioritize leaderboard scores, engineering efforts focus exclusively on optimizing those specific metrics, causing overall performance to suffer as other critical real-world capabilities are neglected.",
+    "source": "Session 6"
+  },
+  {
+    "id": "g007",
+    "query": "If the course ends in July, how does the current session status impact the schedule?",
+    "ideal_answer": "The current session is moving slower than planned because the first session is being covered in more detail. Despite this, the instructor intends to finish the course by July as scheduled.",
+    "source": "Session 2"
+  },
+  {
+    "id": "g008",
+    "query": "Contrast model and application evals by their specific targets and purpose in LLM testing.",
+    "ideal_answer": "Model evals and application evals are two distinct categories of systematic, repeatable tests used to judge LLM-based systems:\n\n*   **Model Evals:** Target the LLM itself to evaluate its performance.\n*   **Application Evals:** Target LLM-based applications to evaluate their specific functionality.\n\n*Note: These terms are unofficial and were created to simplify the distinction between evaluating the underlying model versus the broader application.*",
+    "source": "Session 1"
+  },
+  {
+    "id": "g009",
+    "query": "How do LLM weight-based confidence scores change when comparing simple versus difficult question responses?",
+    "ideal_answer": "According to the provided text, a model's confidence score generally decreases as the difficulty of the question increases. This score is derived from the model's weights and parameters.",
+    "source": "Session 6"
+  },
+  {
+    "id": "g010",
+    "query": "If deploying a chatbot, how could LangSmith or LangFuse help monitor post-deployment performance signals?",
+    "ideal_answer": "LangSmith and LangFuse help monitor post-deployment performance by capturing key signals such as latency, cost, and user feedback (thumbs up/down) every time a student interacts with the chatbot. These tools allow you to continuously evaluate the software's performance even after it is live.",
+    "source": "Session 8"
+  }
+]
