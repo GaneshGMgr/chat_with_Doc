@@ -1,4 +1,4 @@
-# backend\evals\08_latency_evaluation.py
+# backend\evaluations\evals\08_latency_evaluation.py
 """
 Operational eval: LATENCY (with time-to-first-token).
 

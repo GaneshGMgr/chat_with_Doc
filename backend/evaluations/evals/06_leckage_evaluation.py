@@ -1,4 +1,4 @@
-# backend\evals\06_leckage_evaluation.py
+# backend\evaluations\evals\06_leckage_evaluation.py
 import json
 from dotenv import load_dotenv
 

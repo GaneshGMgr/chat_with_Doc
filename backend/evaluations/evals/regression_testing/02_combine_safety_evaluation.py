@@ -1,5 +1,5 @@
-# backend\evals\regression_testing\02_combine_safety_evaluation.py
-# Combine safety: leakage, toxicity and scope
+# backend\evaluations\evals\regression_testing\02_combine_safety_evaluation.py
+# Combine safety evaluation: leakage, toxicity and scope
 
 """
 Safety evals, merged: SCOPE, LEAKAGE (protected + PII), TOXICITY.

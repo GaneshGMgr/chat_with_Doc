@@ -1,4 +1,4 @@
-# backend\evals\10_reliability_evaluation.py
+# backend\evaluations\evals\10_reliability_evaluation.py
 """
 Operational eval: RELIABILITY
 

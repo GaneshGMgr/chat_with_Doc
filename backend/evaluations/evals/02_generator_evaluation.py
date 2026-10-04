@@ -1,4 +1,4 @@
-# backend\evals\02_generator_evaluation.py
+# backend\evaluations\evals\02_generator_evaluation.py
 import json
 import os
 import sys

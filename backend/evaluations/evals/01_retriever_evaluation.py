@@ -1,4 +1,4 @@
-# backend\evals\01_retriever_evaluation.py
+# backend\evaluations\evals\01_retriever_evaluation.py
 import json
 import os
 import sys

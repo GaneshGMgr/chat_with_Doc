@@ -1,4 +1,4 @@
-# backend\evals\03_rag_pipeline_evaluation.py
+# backend\evaluations\evals\03_rag_pipeline_evaluation.py
 import json
 import os
 import sys

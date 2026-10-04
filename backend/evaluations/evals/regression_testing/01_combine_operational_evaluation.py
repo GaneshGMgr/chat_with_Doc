@@ -1,4 +1,4 @@
-# backend\evals\regression_testing\01_combine_operational_evaluation.py
+# backend\evaluations\evals\regression_testing\01_combine_operational_evaluation.py
 # Combine operational evaluation: reliability, cost, latency
 
 """

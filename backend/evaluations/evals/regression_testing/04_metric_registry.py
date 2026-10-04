@@ -1,4 +1,4 @@
-# backend\evals\regression_testing\04_metric_registry.py
+# backend\evaluations\evals\regression_testing\04_metric_registry.py
 """
 The metric registry -- the conceptual heart of regression testing.
 

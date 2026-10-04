@@ -1,4 +1,4 @@
-# backend\evals\07__scope_safety_evaluation.py
+# backend\evaluations\evals\07__scope_safety_evaluation.py
 import json
 from dotenv import load_dotenv
 

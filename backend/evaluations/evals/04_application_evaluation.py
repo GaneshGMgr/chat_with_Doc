@@ -1,4 +1,4 @@
-# backend\evals\04_application_evaluation.py
+# backend\evaluations\evals\04_application_evaluation.py
 from dotenv import load_dotenv
 
 from deepeval import evaluate

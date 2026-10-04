@@ -1,4 +1,4 @@
-# backend\evals\regression_testing\03_run_regression_test.py
+# backend\evaluations\evals\regression_testing\03_run_regression_test.py
 """
 run_suite.py -- the orchestrator.
 
